@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adam Kim Portfolio
 
-## Getting Started
+A production-grade personal portfolio built with Next.js App Router, TypeScript, Tailwind CSS, and a grounded AI assistant.
 
-First, run the development server:
+## Overview
+
+This application is designed to showcase:
+
+- Professional summary and personal brand
+- Structured technical skill categories
+- Experience timeline with real project highlights
+- Featured project cards and polished placeholders
+- Design system mindset and engineering quality
+- AI assistant for recruiter-friendly questions
+- Dark/light theme support and responsive design
+
+## Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS v4
+- shadcn/ui primitives
+- Framer Motion
+- next-themes
+- React Query
+- OpenAI SDK
+- Vitest + React Testing Library
+- Playwright
+- ESLint + Prettier
+- Husky + lint-staged
+
+## Setup
+
+Install dependencies and start the dev server:
 
 ```bash
+npm install
+cp .env.example .env.local
+# add OPENAI_API_KEY to .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — start development server
+- `npm run build` — build for production
+- `npm run start` — run production server
+- `npm run lint` — run ESLint checks
+- `npm run format` — format code with Prettier
+- `npm run test` — run Vitest suite
+- `npm run typecheck` — run TypeScript checks
 
-## Learn More
+## AI Feature
 
-To learn more about Next.js, take a look at the following resources:
+The AI assistant is built using a local portfolio knowledge prompt and the OpenAI SDK.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/data/` contains structured resume content.
+- `src/lib/ai.ts` builds the grounded prompt.
+- `src/app/api/chat/route.ts` handles secure server-side requests.
+- `src/components/chat/ChatAssistant.tsx` provides the user-facing chat experience.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This application is optimized for deployment on Vercel.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Connect the Git repository to Vercel.
+2. Set `OPENAI_API_KEY` in environment variables.
+3. Deploy using the default build settings.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Documentation
+
+See the `docs/` directory for detailed architecture, setup, AI feature, testing, styling, animation, browser testing, deployment, and performance guides.
+
+## Screenshots
+
+Add screenshots below once the application is running.
+
+- Homepage hero and summary
+- Skills and experience sections
+- AI assistant chat interface
+- Dark mode and responsive view
