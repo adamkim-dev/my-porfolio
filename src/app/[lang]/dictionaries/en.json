@@ -13,17 +13,37 @@
       {
         "title": "Frontend Engineering",
         "description": "Building scalable React and Next.js applications with polished UIs, reusable design systems, and measurable performance. 5+ years in production across enterprise domains.",
-        "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS", "MUI", "Ant Design"]
+        "tags": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "MUI",
+          "Ant Design"
+        ]
       },
       {
         "title": "Cloud & Fullstack",
         "description": "Connecting frontend products to serverless backends and cloud infrastructure. Reliable API integration and CDN delivery for fast, production-grade experiences.",
-        "tags": ["AWS Lambda", "API Gateway", "S3", "CloudFront", "Node.js", "REST API"]
+        "tags": [
+          "AWS Lambda",
+          "API Gateway",
+          "S3",
+          "CloudFront",
+          "Node.js",
+          "REST API"
+        ]
       },
       {
         "title": "Engineering Quality",
         "description": "Shipping with confidence through automated test coverage, CI/CD pipelines, and accessible semantic interfaces. Built for maintainability at scale.",
-        "tags": ["Jest", "React Testing Library", "Playwright", "Storybook", "CI/CD"]
+        "tags": [
+          "Jest",
+          "React Testing Library",
+          "Playwright",
+          "Storybook",
+          "CI/CD"
+        ]
       }
     ]
   },
@@ -46,9 +66,18 @@
     "cta_contact": "Contact Me",
     "cta_projects": "Featured Projects",
     "stats": [
-      { "value": "5+", "label": "Years Experience" },
-      { "value": "10+", "label": "Products Shipped" },
-      { "value": "3", "label": "Industries" }
+      {
+        "value": "5+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "10+",
+        "label": "Products Shipped"
+      },
+      {
+        "value": "3",
+        "label": "Industries"
+      }
     ]
   },
   "about": {
@@ -131,10 +160,22 @@
     "subtitle": "Selected projects across enterprise, platform, and web.",
     "preview_label": "Preview",
     "filters": [
-      { "key": "all", "label": "All" },
-      { "key": "enterprise", "label": "Enterprise" },
-      { "key": "platform", "label": "Platform" },
-      { "key": "web", "label": "Web" }
+      {
+        "key": "all",
+        "label": "All"
+      },
+      {
+        "key": "enterprise",
+        "label": "Enterprise"
+      },
+      {
+        "key": "platform",
+        "label": "Platform"
+      },
+      {
+        "key": "web",
+        "label": "Web"
+      }
     ],
     "items": [
       {
@@ -242,7 +283,7 @@
   },
   "footer": {
     "left": "Designed for recruiter review and scaled product delivery.",
-    "right": "Built with Next.js, Tailwind CSS, Framer Motion, and AI-driven content."
+    "right": ""
   },
   "project_detail": {
     "label": "Project detail",
