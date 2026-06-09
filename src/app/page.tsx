@@ -11,9 +11,8 @@ import { ChatAssistant } from "@/components/chat/ChatAssistant"
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden bg-background text-foreground">
-      <div className="absolute inset-x-0 top-0 h-[420px] bg-[radial-gradient(circle_at_top_left,_rgba(79,70,229,0.16),_transparent_40%),radial-gradient(circle_at_top_right,_rgba(16,185,129,0.14),_transparent_35%)]" />
-      <div className="relative mx-auto flex min-h-screen max-w-7xl flex-col gap-16 px-6 py-10 sm:px-8 lg:px-12">
+    <main className="bg-background text-foreground">
+      <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-6 py-10 sm:px-8 lg:px-12">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
