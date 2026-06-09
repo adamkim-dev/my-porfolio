@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "title": "Kim Văn Hà — Lập Trình Viên Fullstack Cấp Cao",
+    "description": "Portfolio cá nhân của Kim Văn Hà giới thiệu React, Next.js, hệ thống thiết kế, QA và tính năng trợ lý AI."
+  },
+  "profile": {
+    "name": "Kim Văn Hà",
+    "summary": "Kỹ sư frontend cấp cao với gần 5 năm kinh nghiệm xây dựng sản phẩm React và Next.js cấp doanh nghiệp cho các lĩnh vực logistics, du lịch và thương mại điện tử. Tôi kết hợp hệ thống thiết kế tái sử dụng, kiểm thử chặt chẽ và triển khai fullstack cloud-native để tạo ra các ứng dụng hoàn chỉnh mà nhà tuyển dụng yêu thích.",
+    "highlights": [
+      "Được tin tưởng triển khai giao diện quan trọng cho hệ thống dịch vụ sân bay.",
+      "Kinh nghiệm sâu về React, Next.js, kiến trúc component và hệ thống UI.",
+      "Kiểm thử thực tiễn với Jest, RTL và Playwright để xây dựng sản phẩm bền vững.",
+      "Kinh nghiệm với AWS serverless, tích hợp API và pipeline CI/CD."
+    ]
+  },
+  "hero": {
+    "badge": "Lập Trình Viên Cấp Cao",
+    "cta_contact": "Liên Hệ",
+    "cta_projects": "Dự Án Nổi Bật",
+    "stats": [
+      { "value": "5+", "label": "Năm Kinh Nghiệm" },
+      { "value": "10+", "label": "Sản Phẩm Đã Ra Mắt" },
+      { "value": "3", "label": "Lĩnh Vực" }
+    ]
+  },
+  "about": {
+    "title": "Về Tôi",
+    "subtitle": "Kỹ thuật lấy con người làm trung tâm với hệ thống thiết kế rõ ràng.",
+    "highlights_label": "Điểm Nổi Bật",
+    "body": [
+      "Tôi xây dựng các sản phẩm số hoàn chỉnh cho khách hàng doanh nghiệp, tập trung vào giao điểm giữa kiến trúc frontend, hệ thống thiết kế và triển khai có thể kiểm thử. Công việc của tôi biến các quy trình phức tạp thành trải nghiệm trực quan.",
+      "Tôi mang đến kinh nghiệm sâu về React, Next.js, hệ thống component UI và các mẫu kiểm thử hiện đại — cùng với tích hợp backend thực tế với AWS và serverless functions.",
+      "Tác động mạnh nhất của tôi là giúp các nhóm tiến nhanh hơn với giao diện có thể dự đoán, chất lượng nhất quán và thực thi tinh tế."
+    ]
+  },
+  "skills": {
+    "title": "Kỹ Năng",
+    "subtitle": "Danh mục, bối cảnh và trình độ sẵn sàng cho nhà tuyển dụng.",
+    "levels": {
+      "Advanced": "Nâng cao",
+      "Intermediate": "Trung cấp"
+    },
+    "categories": [
+      {
+        "title": "Frontend & Giao Diện",
+        "description": "Thiết kế giao diện web phong phú và hệ thống component tái sử dụng cho các sản phẩm hiện đại."
+      },
+      {
+        "title": "Backend & Đám Mây",
+        "description": "Kết nối ứng dụng frontend với các API sạch và cơ sở hạ tầng serverless."
+      },
+      {
+        "title": "Kiểm Thử & Chất Lượng",
+        "description": "Đảm bảo độ tin cậy của sản phẩm với kiểm thử tự động và luồng E2E."
+      },
+      {
+        "title": "Tư Duy Hệ Thống Thiết Kế",
+        "description": "Tạo hệ thống UI có thể mở rộng với cấu trúc atomic và ngôn ngữ thiết kế chung."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Lịch Sử Kinh Nghiệm",
+    "subtitle": "Thành quả, vai trò và tác động trong các dự án sản phẩm lớn.",
+    "items": [
+      {
+        "role": "Lập Trình Viên Frontend / Fullstack",
+        "description": "Triển khai các trải nghiệm dịch vụ sân bay cho hành lý, đỗ xe và dịch vụ thành viên sử dụng React và cơ sở hạ tầng serverless AWS.",
+        "bullets": [
+          "Xây dựng và duy trì nhiều ứng dụng React và Next.js với tính nhất quán UI cao.",
+          "Tích hợp API theo dõi hành lý, đỗ xe thông minh và phần thưởng thành viên để nâng cao hiệu quả vận hành.",
+          "Triển khai hàm backend serverless với AWS Lambda và API Gateway cho quy trình nghiệp vụ có thể mở rộng.",
+          "Hợp tác với nhà thiết kế để tạo giao diện dễ tiếp cận, responsive phù hợp với thương hiệu sân bay.",
+          "Tham gia tự động hóa CI/CD trên S3, CloudFront và pipeline triển khai."
+        ]
+      },
+      {
+        "role": "Lập Trình Viên Frontend",
+        "description": "Phát triển tính năng chat và video realtime cho nền tảng giao tiếp 3D.",
+        "bullets": [
+          "Phát triển giao diện chat realtime, gọi video và tính năng mạng xã hội bằng React.",
+          "Tích hợp môi trường 3D Unity vào luồng web với ưu tiên responsive và hiệu suất.",
+          "Hợp tác chặt chẽ với team backend để đồng bộ tin nhắn realtime và trạng thái kết nối.",
+          "Triển khai tương tác bạn bè, thông báo và hồ sơ người dùng để tăng mức độ tham gia.",
+          "Tối ưu tương thích trình duyệt và hiệu suất client cho luồng media nặng."
+        ]
+      },
+      {
+        "role": "Lập Trình Viên Frontend",
+        "description": "Triển khai sản phẩm đăng ký hôn nhân trực tuyến đa tôn giáo nhấn mạnh vào khả năng tiếp cận và hành trình người dùng đơn giản.",
+        "bullets": [
+          "Phát triển trang web hoàn chỉnh sử dụng React và các mẫu Ant Design System.",
+          "Hợp tác với nhà thiết kế để đảm bảo giao diện đáp ứng kỳ vọng UI/UX và yêu cầu nghiệp vụ.",
+          "Tối ưu tốc độ tải trang và cải thiện responsive trên mobile và desktop.",
+          "Quản lý tích hợp dữ liệu và tương tác API để đảm bảo gửi form và theo dõi trạng thái đáng tin cậy.",
+          "Thực hiện bảo trì và cải thiện bảo mật liên tục cho nền tảng."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Dự Án Nổi Bật",
+    "subtitle": "Nghiên cứu điển hình cao cấp về thiết kế, triển khai và chất lượng kỹ thuật.",
+    "preview_label": "Xem trước",
+    "items": [
+      {
+        "title": "Dịch Vụ Thông Minh Sân Bay Changi",
+        "summary": "Bộ dịch vụ sân bay cao cấp hiện đại hóa quy trình xử lý hành lý, đỗ xe và thành viên cho du khách và đội ngũ vận hành.",
+        "highlights": [
+          "Triển khai giao diện nhất quán cho nhiều ứng dụng web bằng React và Next.js.",
+          "Thiết kế trải nghiệm dịch vụ cho du khách với tính năng thành viên và phần thưởng sân bay.",
+          "Xây dựng hỗ trợ backend serverless với AWS Lambda và CloudFront để giảm độ trễ."
+        ],
+        "details": [
+          "Dẫn dắt kiến trúc frontend cho bộ ứng dụng vận hành sân bay bao gồm web app hướng đến du khách và dashboard nội bộ.",
+          "Triển khai trải nghiệm responsive với điều hướng dựa trên vai trò, cập nhật realtime và quy trình check-in thân thiện với mobile.",
+          "Tối ưu hiệu suất với serverless API và phân phối CDN để tải nhanh trong toàn sân bay."
+        ],
+        "status": "Đang hoạt động",
+        "link_label": "Chi tiết nền tảng"
+      },
+      {
+        "title": "Nền Tảng Chat & Video RSupports",
+        "summary": "Nền tảng giao tiếp realtime tích hợp chat, gọi video và giao diện 3D immersive cho các cuộc họp ảo cộng tác.",
+        "highlights": [
+          "Triển khai luồng chat và video UI với hiệu suất và khả năng tiếp cận.",
+          "Tích hợp nội dung 3D Unity vào trải nghiệm web React.",
+          "Hợp tác đồng bộ realtime với dịch vụ messaging backend."
+        ],
+        "details": [
+          "Xây dựng luồng giao tiếp immersive với chat, video và các điều khiển tương tác cho cộng tác nhóm hiện đại.",
+          "Đảm bảo khả năng tiếp cận và streaming độ trễ thấp cho người tham gia từ xa trên nhiều thiết bị.",
+          "Phối hợp tích hợp liên nhóm cho messaging, signaling và module trải nghiệm 3D."
+        ],
+        "status": "Đang phát triển",
+        "link_label": "Tổng quan dự án"
+      },
+      {
+        "title": "Cổng Đăng Ký OMJS NCS",
+        "summary": "Sản phẩm đăng ký hôn nhân và quản lý sự kiện đa tôn giáo giúp đơn giản hóa đặt chỗ và onboarding người dùng.",
+        "highlights": [
+          "Xây dựng hành trình người dùng responsive sử dụng Ant Design và React.",
+          "Triển khai tương thích đa nền tảng và cải thiện giao diện tiếp cận.",
+          "Hỗ trợ tích hợp backend cho theo dõi trạng thái và quy trình sự kiện."
+        ],
+        "details": [
+          "Phát triển trải nghiệm đặt chỗ lấy người dùng làm trung tâm với form có hướng dẫn và theo dõi tiến trình.",
+          "Triển khai layout tiếp cận được cho hỗ trợ đa thiết bị và cập nhật trạng thái sự kiện rõ ràng.",
+          "Xây dựng tích hợp cho quy trình đăng ký, xác nhận thanh toán và kiểm tra trạng thái backend."
+        ],
+        "status": "Đã hoàn thành",
+        "link_label": "Nghiên cứu điển hình"
+      },
+      {
+        "title": "Hệ Thống Thiết Kế & Framework Kiểm Thử",
+        "summary": "Nền tảng UI và kiểm thử tái sử dụng được xây dựng cho các nhóm doanh nghiệp, kết hợp nguyên tắc thiết kế atomic với xác thực component tự động.",
+        "highlights": [
+          "Thiết lập thư viện component chung với Storybook và design tokens.",
+          "Cải thiện sự hợp tác giữa nhà thiết kế và lập trình viên qua các mẫu giao diện rõ ràng.",
+          "Tăng tốc triển khai với các khối UI tái sử dụng và coverage kiểm thử rõ ràng."
+        ],
+        "details": [
+          "Tạo thư viện component chung với Storybook docs, design tokens và các mẫu tái sử dụng.",
+          "Xây dựng nền tảng kiểm thử kết nối component UI với Jest, Playwright và accessibility checks.",
+          "Giúp nhóm thiết kế và kỹ thuật triển khai giao diện nhất quán nhanh hơn với tài liệu rõ ràng."
+        ],
+        "status": "Đang tiến hành",
+        "link_label": "Đọc triết lý thiết kế"
+      }
+    ]
+  },
+  "design_system": {
+    "title": "Triết Lý Hệ Thống Thiết Kế",
+    "subtitle": "Hệ thống UI tái sử dụng có thể mở rộng với các nhóm sản phẩm.",
+    "body": [
+      "Tôi tiếp cận hệ thống thiết kế với tư duy atomic: primitive sạch, token nhất quán và các mẫu module dễ tái sử dụng và phát triển.",
+      "Kinh nghiệm của tôi bao gồm xây dựng thư viện component với Storybook, Ant Design và MUI, sau đó chuyển các hệ thống đó thành code frontend sẵn sàng production."
+    ],
+    "focus_label": "Trọng tâm hệ thống",
+    "focus_items": [
+      "Cấu trúc atomic cho việc xây dựng giao diện đáng tin cậy",
+      "Design tokens cho ngôn ngữ visual nhất quán",
+      "Hợp tác Storybook giữa nhà thiết kế và kỹ sư",
+      "Kiểm thử component, tài liệu và kiểm soát phiên bản"
+    ]
+  },
+  "quality": {
+    "title": "Kiểm Thử & Chất Lượng Kỹ Thuật",
+    "subtitle": "Thực hành triển khai cho công việc sản phẩm ổn định và có thể mở rộng.",
+    "body": [
+      "Chất lượng kỹ thuật là mối quan tâm hàng đầu. Tôi kết hợp kiểm thử tự động, CI/CD và giao diện tiếp cận để tính năng được triển khai với sự tự tin.",
+      "Các sản phẩm tôi xây dựng được cấu trúc để hỗ trợ cả lặp lại nhanh và bảo trì có thể dự đoán, là ứng viên mạnh cho việc xem xét và ổn định production."
+    ],
+    "items": [
+      "Unit testing với Jest và React Testing Library",
+      "Xác thực component với Storybook và các mẫu tái sử dụng",
+      "Kiểm thử luồng browser với Playwright",
+      "Sẵn sàng CI/CD cho triển khai nhanh và an toàn hơn",
+      "Triển khai UI ưu tiên accessibility và semantic markup"
+    ]
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "subtitle": "Hãy biến dự án tiếp theo của bạn thành trải nghiệm số rõ ràng.",
+    "availability": "Tôi sẵn sàng cho các vị trí frontend cấp cao và fullstack, lãnh đạo kỹ thuật và các vai trò kỹ thuật tập trung vào sản phẩm.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "left": "Được thiết kế để nhà tuyển dụng xem xét và triển khai sản phẩm quy mô lớn.",
+    "right": "Xây dựng với Next.js, Tailwind CSS, Framer Motion và nội dung AI."
+  },
+  "project_detail": {
+    "label": "Chi tiết dự án",
+    "back": "Quay lại portfolio",
+    "status_label": "Trạng thái",
+    "technologies_label": "Công nghệ",
+    "highlights_label": "Điểm nổi bật",
+    "imagery_label": "Hình ảnh dự án",
+    "imagery_placeholder": "Placeholder hình ảnh cho tổng quan chi tiết dự án."
+  }
+}

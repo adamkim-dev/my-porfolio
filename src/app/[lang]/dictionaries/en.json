@@ -1,0 +1,222 @@
+{
+  "meta": {
+    "title": "Kim Van Ha — Senior Fullstack Developer",
+    "description": "Personal portfolio for Kim Van Ha showcasing React, Next.js, design systems, QA, and AI assistant features."
+  },
+  "profile": {
+    "name": "Kim Van Ha",
+    "summary": "Senior frontend engineer with nearly 5 years of experience building enterprise-grade React and Next.js products for logistics, travel, and ecommerce domains. I combine reusable design systems, robust testing, and cloud-native fullstack delivery to create polished applications recruiters love.",
+    "highlights": [
+      "Trusted to deliver mission-critical interfaces for airport service systems.",
+      "Deep experience with React, Next.js, component architecture, and UI systems.",
+      "A pragmatic tester who builds maintainable products with Jest, RTL, and Playwright.",
+      "Experienced with AWS serverless workflows, API integration, and CI/CD pipelines."
+    ]
+  },
+  "hero": {
+    "badge": "Senior Developer",
+    "cta_contact": "Contact Me",
+    "cta_projects": "Featured Projects",
+    "stats": [
+      { "value": "5+", "label": "Years Experience" },
+      { "value": "10+", "label": "Products Shipped" },
+      { "value": "3", "label": "Industries" }
+    ]
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Human-centered engineering with design system clarity.",
+    "highlights_label": "Highlights",
+    "body": [
+      "I build polished digital products for enterprise customers, focusing on the intersection of frontend architecture, design systems, and testable delivery. My work turns complex workflows into intuitive experiences.",
+      "I bring deep experience across React, Next.js, UI component systems, and modern testing patterns — alongside practical backend integration with AWS and serverless functions.",
+      "My strongest impact is helping teams move faster with predictable interfaces, consistent quality, and elegant execution."
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Categories, context, and recruiter-ready proficiency.",
+    "levels": {
+      "Advanced": "Advanced",
+      "Intermediate": "Intermediate"
+    },
+    "categories": [
+      {
+        "title": "Frontend & UI",
+        "description": "Designing rich web interfaces and reusable component systems for modern products."
+      },
+      {
+        "title": "Backend & Cloud",
+        "description": "Connecting frontend applications to clean APIs and serverless infrastructure."
+      },
+      {
+        "title": "Testing & Quality",
+        "description": "Ensuring product reliability with automated regression coverage and E2E flows."
+      },
+      {
+        "title": "Design System Mindset",
+        "description": "Creating scalable UI systems with atomic structure and shared design language."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience timeline",
+    "subtitle": "Deliverables, roles, and impact across major product engagements.",
+    "items": [
+      {
+        "role": "Frontend Developer / Fullstack",
+        "description": "Delivering airport service experiences for baggage, parking, and membership services using React and AWS serverless infrastructure.",
+        "bullets": [
+          "Built and maintained multiple React and Next.js applications with strong UI consistency across services.",
+          "Integrated APIs for baggage tracking, smart parking, and member rewards to boost operational efficiency.",
+          "Implemented serverless backend functions with AWS Lambda and API Gateway for scalable business workflows.",
+          "Collaborated with designers to deliver accessible, responsive user interfaces aligned with airport branding.",
+          "Participated in CI/CD automation across S3, CloudFront, and deployment pipelines."
+        ]
+      },
+      {
+        "role": "Frontend Developer",
+        "description": "Shipped real-time chat and video collaboration features for a 3D-enabled communication platform.",
+        "bullets": [
+          "Developed the user interface for real-time chat, video calling, and social features using React.",
+          "Integrated 3D Unity environments into web flows while prioritizing responsive behaviour and performance.",
+          "Collaborated closely with backend teams to synchronize real-time messaging and connection state.",
+          "Implemented friend, notification, and profile interactions to maximize user engagement.",
+          "Optimized cross-browser compatibility and client performance for media-heavy flows."
+        ]
+      },
+      {
+        "role": "Frontend Developer",
+        "description": "Delivered a multi-religion online marriage registration product that emphasizes accessibility and streamlined user journeys.",
+        "bullets": [
+          "Developed polished web pages using React and Ant Design System patterns.",
+          "Worked with designers to ensure the interface matched UI/UX expectations and business requirements.",
+          "Optimized page load time and improved responsiveness across mobile and desktop.",
+          "Managed data integration and API interactions to ensure reliable form submission and status tracking.",
+          "Delivered ongoing maintenance and security improvements for the platform."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured projects",
+    "subtitle": "Premium case studies with design, delivery, and engineering quality.",
+    "preview_label": "Preview",
+    "items": [
+      {
+        "title": "Changi Airport Smart Services",
+        "summary": "A premium airport services suite that modernizes baggage handling, parking, and membership workflows for travelers and operations teams.",
+        "highlights": [
+          "Delivered consistent interfaces across multiple web applications using React and Next.js.",
+          "Designed service-driven experiences for travelers with airport membership and rewards features.",
+          "Built serverless backend support using AWS Lambda and CloudFront to minimize latency."
+        ],
+        "details": [
+          "Led the frontend architecture for an airport operations suite that spans traveler-facing web apps and internal dashboards.",
+          "Delivered responsive experiences with role-based navigation, real-time updates, and mobile-friendly boarding workflows.",
+          "Optimized performance with serverless APIs and CDN delivery for fast loading across airport terminals."
+        ],
+        "status": "Live in production",
+        "link_label": "Platform details"
+      },
+      {
+        "title": "RSupports Chat & Video Platform",
+        "summary": "A real-time communication platform integrating chat, video calls, and immersive 3D interfaces for collaborative virtual meetings.",
+        "highlights": [
+          "Implemented chat and video UI flows with performance and accessibility in mind.",
+          "Integrated 3D Unity content into a React web experience.",
+          "Collaborated on real-time synchronization with backend messaging services."
+        ],
+        "details": [
+          "Built immersive communication flows with chat, video, and interactive controls for modern team collaboration.",
+          "Ensured accessibility and low-latency streaming for remote participants across devices.",
+          "Coordinated cross-team integration of messaging, signaling, and 3D experience modules."
+        ],
+        "status": "In development",
+        "link_label": "Project overview"
+      },
+      {
+        "title": "OMJS NCS Registration Portal",
+        "summary": "A multi-faith marriage registration and event management product designed to simplify booking and user onboarding.",
+        "highlights": [
+          "Built a responsive user journey using Ant Design and React.",
+          "Delivered cross-platform compatibility and accessible interface improvements.",
+          "Supported backend integration for status tracking and event workflows."
+        ],
+        "details": [
+          "Developed a user-centric booking experience with guided forms and progress tracking.",
+          "Delivered accessible layouts for multi-device support and clear event status updates.",
+          "Built integrations for registration workflows, payment validation, and backend status checks."
+        ],
+        "status": "Delivered",
+        "link_label": "Case study"
+      },
+      {
+        "title": "Design System & Test Framework",
+        "summary": "A reusable UI and testing foundation built for enterprise teams, combining atomic design principles with automated component validation.",
+        "highlights": [
+          "Established a shared component library powered by Storybook and design tokens.",
+          "Improved collaboration between designers and developers through clear interface patterns.",
+          "Enabled faster delivery with reusable UI building blocks and clear test coverage."
+        ],
+        "details": [
+          "Created a shared component library with Storybook docs, design tokens, and reusable patterns.",
+          "Built a testing foundation that connects UI components with Jest, Playwright, and accessibility checks.",
+          "Enabled design and engineering teams to ship consistent interfaces faster with strong documentation."
+        ],
+        "status": "Ongoing",
+        "link_label": "Read the design philosophy"
+      }
+    ]
+  },
+  "design_system": {
+    "title": "Design system philosophy",
+    "subtitle": "Reusable UI systems that scale with product teams.",
+    "body": [
+      "I approach design systems with an atomic mindset: clean primitives, consistent tokens, and modular patterns that are easy to reuse and evolve.",
+      "My experience includes building component libraries with Storybook, Ant Design, and MUI, then translating those systems into production-ready frontend code."
+    ],
+    "focus_label": "System focus",
+    "focus_items": [
+      "Atomic structure for reliable interface building",
+      "Design tokens for consistent visual language",
+      "Storybook collaboration between designers and engineers",
+      "Component tests, documentation, and version control"
+    ]
+  },
+  "quality": {
+    "title": "Testing & engineering quality",
+    "subtitle": "Delivery practices for stable, scalable product work.",
+    "body": [
+      "Engineering quality is a first-class concern. I combine test automation, CI/CD, and accessible interfaces so features ship with confidence.",
+      "The products I build are structured to support both fast iteration and predictable maintenance, making them strong candidates for recruiter review and production stability."
+    ],
+    "items": [
+      "Unit testing with Jest and React Testing Library",
+      "Component validation with Storybook and reusable patterns",
+      "Browser-level flow coverage with Playwright",
+      "CI/CD readiness for faster, safer deployments",
+      "Accessibility-first UI delivery and semantic markup"
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's turn your next project into a clear digital experience.",
+    "availability": "I am available for senior frontend and fullstack opportunities, technical leadership, and product-focused engineering roles.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "left": "Designed for recruiter review and scaled product delivery.",
+    "right": "Built with Next.js, Tailwind CSS, Framer Motion, and AI-driven content."
+  },
+  "project_detail": {
+    "label": "Project detail",
+    "back": "Back to portfolio",
+    "status_label": "Status",
+    "technologies_label": "Technologies",
+    "highlights_label": "Highlights",
+    "imagery_label": "Project imagery",
+    "imagery_placeholder": "Imagery placeholder for the project detail overview."
+  }
+}

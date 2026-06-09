@@ -4,8 +4,16 @@ import { buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { profile } from "@/data/profile"
 import { ThemeToggle } from "@/components/ui/theme-toggle"
+import { LanguageSwitcher } from "@/components/ui/language-switcher"
+import type { Dict } from "@/app/[lang]/dictionaries"
 
-export function HeroSection() {
+type Props = {
+  t: Dict["hero"]
+  profile: Dict["profile"]
+  lang: string
+}
+
+export function HeroSection({ t, profile: p, lang }: Props) {
   return (
     <section className="relative overflow-hidden rounded-3xl border border-border bg-card px-8 py-12 sm:px-12 sm:py-16">
       <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
@@ -14,41 +22,43 @@ export function HeroSection() {
       <div className="relative flex flex-col gap-10 sm:flex-row sm:items-start sm:justify-between">
         {/* Left: content */}
         <div className="flex flex-1 flex-col gap-10">
-          {/* Top row: label + theme toggle */}
-          <div className="flex items-start justify-between">
+          {/* Top row: badge + controls */}
+          <div className="flex items-start justify-between gap-4">
             <span className="inline-block rounded-full border border-secondary/30 bg-secondary/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-secondary">
-              Senior Developer
+              {t.badge}
             </span>
-            <ThemeToggle />
+            <div className="flex items-center gap-2">
+              <LanguageSwitcher currentLang={lang} />
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Name + bio */}
           <div className="max-w-2xl">
             <h1 className="text-5xl font-bold tracking-tight text-foreground sm:text-6xl">
-              {profile.name}
+              {p.name}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              {profile.summary}
+              {p.summary}
             </p>
           </div>
 
           {/* CTA row */}
           <div className="flex flex-wrap items-center gap-4">
             <Link href="#contact" className={cn(buttonVariants({ size: "lg" }))}>
-              Contact Me
+              {t.cta_contact}
             </Link>
-            <Link href="#projects" className={cn(buttonVariants({ variant: "outline", size: "lg" }))}>
-              Featured Projects
+            <Link
+              href="#projects"
+              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+            >
+              {t.cta_projects}
             </Link>
           </div>
 
           {/* Stats row */}
           <div className="flex flex-wrap gap-8 border-t border-border pt-8">
-            {[
-              { value: "5+", label: "Years Experience" },
-              { value: "10+", label: "Products Shipped" },
-              { value: "3", label: "Industries" },
-            ].map(({ value, label }) => (
+            {t.stats.map(({ value, label }) => (
               <div key={label}>
                 <p className="text-3xl font-bold text-foreground">{value}</p>
                 <p className="mt-1 text-sm text-muted-foreground">{label}</p>
@@ -62,7 +72,7 @@ export function HeroSection() {
           <div className="relative h-52 w-52 overflow-hidden rounded-3xl border border-border shadow-lg sm:h-64 sm:w-64">
             <Image
               src={profile.avatar}
-              alt={profile.name}
+              alt={p.name}
               fill
               className="object-cover object-top"
               priority
