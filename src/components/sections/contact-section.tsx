@@ -27,7 +27,7 @@ export function ContactSection({ t, profile }: Props) {
           variants={fadeUp}
           className="font-mono text-xs font-medium tracking-widest text-primary"
         >
-          // {t.title}
+          {`//${t.title}`}
         </motion.p>
 
         <motion.h2
