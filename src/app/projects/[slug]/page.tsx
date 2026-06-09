@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import type { Metadata } from "next"
 import { projects } from "@/data/projects"
 import { SectionHeading } from "@/components/sections/section-heading"
 import { buttonVariants } from "@/components/ui/button"
@@ -9,12 +10,28 @@ export function generateStaticParams() {
     return projects.map((project) => ({ slug: project.slug }))
 }
 
-export default async function ProjectDetailPage({ params }: { params: { slug: string } }) {
-    console.log('Fetching project details for slug:', params)
-    const base = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'
-    const res = await fetch(`${base}/api/projects/${params.slug}`, { cache: 'no-store' })
-    if (!res.ok) notFound()
-    const project = await res.json()
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+    const { slug } = await params
+    const project = projects.find((p) => p.slug === slug)
+    if (!project) return {}
+    return {
+        title: `${project.title} — Adam Kim`,
+        description: project.summary,
+    }
+}
+
+export default async function ProjectDetailPage({
+    params,
+}: {
+    params: Promise<{ slug: string }>
+}) {
+    const { slug } = await params
+    const project = projects.find((p) => p.slug === slug)
+    if (!project) notFound()
 
     return (
         <main className="mx-auto max-w-6xl px-6 py-16 sm:px-8 lg:px-12">
@@ -29,8 +46,8 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
                     </p>
                 </div>
                 <Link
-                    href="/"
-                    className={cn(buttonVariants({ variant: "outline" }), "text-sm font-medium")}
+                    href="/#projects"
+                    className={cn(buttonVariants({ variant: "outline" }), "shrink-0 text-sm font-medium")}
                 >
                     Back to portfolio
                 </Link>
@@ -53,7 +70,7 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
                     </div>
 
                     <div className="space-y-6">
-                        {project.details.map((detail: string) => (
+                        {project.details.map((detail) => (
                             <p key={detail} className="text-sm leading-7 text-muted-foreground">
                                 {detail}
                             </p>
@@ -70,7 +87,7 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
                     <div className="rounded-[2rem] border border-border bg-card/90 p-8 shadow-sm">
                         <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">Technologies</p>
                         <div className="mt-4 flex flex-wrap gap-2">
-                            {project.technologies.map((tech: string) => (
+                            {project.technologies.map((tech) => (
                                 <span
                                     key={tech}
                                     className="rounded-full border border-border/70 bg-background px-3 py-1 text-xs text-muted-foreground"
@@ -84,14 +101,25 @@ export default async function ProjectDetailPage({ params }: { params: { slug: st
                     <div className="rounded-[2rem] border border-border bg-card/90 p-8 shadow-sm">
                         <p className="text-xs uppercase tracking-[0.24em] text-muted-foreground">Highlights</p>
                         <ul className="mt-4 space-y-3 text-sm leading-7 text-foreground">
-                            {project.highlights.map((highlight: string) => (
+                            {project.highlights.map((highlight) => (
                                 <li key={highlight} className="flex gap-3">
-                                    <span className="mt-1 inline-block h-2.5 w-2.5 rounded-full bg-primary" />
+                                    <span className="mt-1 inline-block h-2.5 w-2.5 shrink-0 rounded-full bg-primary" />
                                     {highlight}
                                 </li>
                             ))}
                         </ul>
                     </div>
+
+                    {project.linkHref && !project.linkHref.startsWith("/projects") && (
+                        <a
+                            href={project.linkHref}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={cn(buttonVariants({ variant: "default" }), "w-full justify-center text-sm font-medium")}
+                        >
+                            {project.linkLabel}
+                        </a>
+                    )}
                 </aside>
             </div>
         </main>

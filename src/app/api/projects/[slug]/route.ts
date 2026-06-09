@@ -1,9 +1,11 @@
 import { NextResponse } from "next/server";
 import { projects } from "@/data/projects";
 
-export async function GET(request: Request, context: any) {
-  const { params } = context || {};
-  const { slug } = params || {};
+export async function GET(
+  _request: Request,
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
