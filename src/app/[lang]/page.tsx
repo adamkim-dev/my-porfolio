@@ -1,18 +1,14 @@
 import { notFound } from "next/navigation"
 import { getDictionary, hasLocale } from "./dictionaries"
-import { AboutSection } from "@/components/sections/about-section"
-import { ContactSection } from "@/components/sections/contact-section"
-import { DesignSystemSection } from "@/components/sections/design-system-section"
-import { ExperienceSection } from "@/components/sections/experience-section"
-import { FooterSection } from "@/components/sections/footer-section"
+import { NavBar } from "@/components/ui/nav-bar"
 import { HeroSection } from "@/components/sections/hero-section"
+import { ExpertiseSection } from "@/components/sections/expertise-section"
 import { ProjectsSection } from "@/components/sections/projects-section"
-import { QualitySection } from "@/components/sections/quality-section"
-import { SkillsSection } from "@/components/sections/skills-section"
+import { ExperienceSection } from "@/components/sections/experience-section"
+import { ContactSection } from "@/components/sections/contact-section"
+import { FooterSection } from "@/components/sections/footer-section"
 import { ChatAssistant } from "@/components/chat/ChatAssistant"
 import { experiences } from "@/data/experiences"
-import { projects } from "@/data/projects"
-import { skillCategories } from "@/data/skills"
 import { profile } from "@/data/profile"
 
 export default async function Home({
@@ -25,26 +21,28 @@ export default async function Home({
 
   const dict = await getDictionary(lang)
 
+  const navItems = [
+    { label: dict.nav.home, href: "#home" },
+    { label: dict.nav.expertise, href: "#expertise" },
+    { label: dict.nav.work, href: "#work" },
+    { label: dict.nav.experience, href: "#experience" },
+    { label: dict.nav.contact, href: "#contact" },
+  ]
+
   return (
-    <main className="bg-background text-foreground">
-      <div className="mx-auto flex min-h-screen w-full max-w-screen-xl flex-col px-4 py-8 sm:px-6 md:px-10 lg:px-16 xl:px-20">
-        <HeroSection t={dict.hero} profile={dict.profile} lang={lang} />
-        <AboutSection t={dict.about} highlights={dict.profile.highlights} />
-        <SkillsSection
-          t={dict.skills}
-          categories={skillCategories}
-        />
-        <ExperienceSection
-          t={dict.experience}
-          experiences={experiences}
-        />
-        <ProjectsSection t={dict.projects} lang={lang} />
-        <DesignSystemSection t={dict.design_system} />
-        <QualitySection t={dict.quality} />
-        <ChatAssistant />
-        <ContactSection t={dict.contact} profile={profile} />
-        <FooterSection t={dict.footer} />
-      </div>
-    </main>
+    <>
+      <NavBar lang={lang} items={navItems} />
+      <main className="bg-background text-foreground">
+        <div className="mx-auto w-full max-w-screen-xl px-4 pb-8 sm:px-6 md:px-10 lg:px-16 xl:px-20">
+          <HeroSection t={dict.hero} profile={dict.profile} lang={lang} />
+          <ExpertiseSection t={dict.expertise} />
+          <ProjectsSection t={dict.projects} lang={lang} />
+          <ExperienceSection t={dict.experience} experiences={experiences} />
+          <ContactSection t={dict.contact} profile={profile} />
+          <ChatAssistant />
+          <FooterSection t={dict.footer} />
+        </div>
+      </main>
+    </>
   )
 }

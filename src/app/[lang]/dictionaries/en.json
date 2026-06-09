@@ -1,4 +1,32 @@
 {
+  "nav": {
+    "home": "home",
+    "expertise": "expertise",
+    "work": "work",
+    "experience": "experience",
+    "contact": "contact"
+  },
+  "expertise": {
+    "title": "expertise",
+    "subtitle": "What I bring to every project.",
+    "cards": [
+      {
+        "title": "Frontend Engineering",
+        "description": "Building scalable React and Next.js applications with polished UIs, reusable design systems, and measurable performance. 5+ years in production across enterprise domains.",
+        "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS", "MUI", "Ant Design"]
+      },
+      {
+        "title": "Cloud & Fullstack",
+        "description": "Connecting frontend products to serverless backends and cloud infrastructure. Reliable API integration and CDN delivery for fast, production-grade experiences.",
+        "tags": ["AWS Lambda", "API Gateway", "S3", "CloudFront", "Node.js", "REST API"]
+      },
+      {
+        "title": "Engineering Quality",
+        "description": "Shipping with confidence through automated test coverage, CI/CD pipelines, and accessible semantic interfaces. Built for maintainability at scale.",
+        "tags": ["Jest", "React Testing Library", "Playwright", "Storybook", "CI/CD"]
+      }
+    ]
+  },
   "meta": {
     "title": "Kim Van Ha — Senior Fullstack Developer",
     "description": "Personal portfolio for Kim Van Ha showcasing React, Next.js, design systems, QA, and AI assistant features."
@@ -60,8 +88,8 @@
     ]
   },
   "experience": {
-    "title": "Experience timeline",
-    "subtitle": "Deliverables, roles, and impact across major product engagements.",
+    "title": "experience",
+    "subtitle": "Roles, deliverables, and impact across major engagements.",
     "items": [
       {
         "role": "Frontend Developer / Fullstack",
@@ -99,9 +127,15 @@
     ]
   },
   "projects": {
-    "title": "Featured projects",
-    "subtitle": "Premium case studies with design, delivery, and engineering quality.",
+    "title": "work",
+    "subtitle": "Selected projects across enterprise, platform, and web.",
     "preview_label": "Preview",
+    "filters": [
+      { "key": "all", "label": "All" },
+      { "key": "enterprise", "label": "Enterprise" },
+      { "key": "platform", "label": "Platform" },
+      { "key": "web", "label": "Web" }
+    ],
     "items": [
       {
         "title": "Changi Airport Smart Services",
@@ -200,9 +234,9 @@
     ]
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "Let's turn your next project into a clear digital experience.",
-    "availability": "I am available for senior frontend and fullstack opportunities, technical leadership, and product-focused engineering roles.",
+    "title": "contact",
+    "subtitle": "Available for select opportunities.",
+    "availability": "Open to senior frontend and fullstack roles, technical leadership, and product-focused engineering. Let's build something great.",
     "linkedin": "LinkedIn",
     "github": "GitHub"
   },

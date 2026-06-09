@@ -7,8 +7,8 @@ function formatExperience(experience: { company: string; role: string; date: str
   return `- ${experience.company} (${experience.date}) — ${experience.role} in ${experience.location}. ${experience.description} Technologies: ${experience.technologies.join(", ")}.`
 }
 
-function formatProject(project: { title: string; summary: string; highlights: string[]; technologies: string[]; status: string }) {
-  return `- ${project.title}: ${project.summary} Highlights: ${project.highlights.join("; ")} Technologies: ${project.technologies.join(", ")}. Status: ${project.status}.`
+function formatProject(project: { slug: string; technologies: string[]; category: string }) {
+  return `- ${project.slug} (${project.category}): Technologies: ${project.technologies.join(", ")}.`
 }
 
 export function buildPortfolioKnowledge() {

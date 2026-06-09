@@ -124,6 +124,7 @@
   }
   html {
     @apply scroll-smooth font-sans antialiased;
+    scroll-padding-top: 4rem;
   }
   body {
     @apply min-h-screen bg-background text-foreground;

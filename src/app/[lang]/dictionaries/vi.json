@@ -1,4 +1,32 @@
 {
+  "nav": {
+    "home": "trang chủ",
+    "expertise": "chuyên môn",
+    "work": "dự án",
+    "experience": "kinh nghiệm",
+    "contact": "liên hệ"
+  },
+  "expertise": {
+    "title": "chuyên môn",
+    "subtitle": "Những gì tôi mang đến cho mỗi dự án.",
+    "cards": [
+      {
+        "title": "Kỹ Thuật Frontend",
+        "description": "Xây dựng ứng dụng React và Next.js có thể mở rộng với UI hoàn chỉnh, hệ thống thiết kế tái sử dụng và hiệu suất đo lường được. 5+ năm trong môi trường production doanh nghiệp.",
+        "tags": ["React", "Next.js", "TypeScript", "Tailwind CSS", "MUI", "Ant Design"]
+      },
+      {
+        "title": "Cloud & Fullstack",
+        "description": "Kết nối sản phẩm frontend với backend serverless và hạ tầng đám mây. Tích hợp API đáng tin cậy và phân phối CDN cho trải nghiệm production nhanh.",
+        "tags": ["AWS Lambda", "API Gateway", "S3", "CloudFront", "Node.js", "REST API"]
+      },
+      {
+        "title": "Chất Lượng Kỹ Thuật",
+        "description": "Triển khai tự tin với coverage kiểm thử tự động, pipeline CI/CD và giao diện tiếp cận semantic. Được xây dựng để bảo trì ở quy mô lớn.",
+        "tags": ["Jest", "React Testing Library", "Playwright", "Storybook", "CI/CD"]
+      }
+    ]
+  },
   "meta": {
     "title": "Kim Văn Hà — Lập Trình Viên Fullstack Cấp Cao",
     "description": "Portfolio cá nhân của Kim Văn Hà giới thiệu React, Next.js, hệ thống thiết kế, QA và tính năng trợ lý AI."
@@ -60,8 +88,8 @@
     ]
   },
   "experience": {
-    "title": "Lịch Sử Kinh Nghiệm",
-    "subtitle": "Thành quả, vai trò và tác động trong các dự án sản phẩm lớn.",
+    "title": "kinh nghiệm",
+    "subtitle": "Vai trò, thành quả và tác động trong các dự án lớn.",
     "items": [
       {
         "role": "Lập Trình Viên Frontend / Fullstack",
@@ -99,9 +127,15 @@
     ]
   },
   "projects": {
-    "title": "Dự Án Nổi Bật",
-    "subtitle": "Nghiên cứu điển hình cao cấp về thiết kế, triển khai và chất lượng kỹ thuật.",
+    "title": "dự án",
+    "subtitle": "Các dự án nổi bật trong lĩnh vực doanh nghiệp, nền tảng và web.",
     "preview_label": "Xem trước",
+    "filters": [
+      { "key": "all", "label": "Tất cả" },
+      { "key": "enterprise", "label": "Doanh nghiệp" },
+      { "key": "platform", "label": "Nền tảng" },
+      { "key": "web", "label": "Web" }
+    ],
     "items": [
       {
         "title": "Dịch Vụ Thông Minh Sân Bay Changi",
@@ -200,9 +234,9 @@
     ]
   },
   "contact": {
-    "title": "Liên Hệ",
-    "subtitle": "Hãy biến dự án tiếp theo của bạn thành trải nghiệm số rõ ràng.",
-    "availability": "Tôi sẵn sàng cho các vị trí frontend cấp cao và fullstack, lãnh đạo kỹ thuật và các vai trò kỹ thuật tập trung vào sản phẩm.",
+    "title": "liên hệ",
+    "subtitle": "Sẵn sàng cho các cơ hội phù hợp.",
+    "availability": "Mở cửa với các vị trí frontend cấp cao, fullstack và lãnh đạo kỹ thuật. Hãy cùng xây dựng điều gì đó tuyệt vời.",
     "linkedin": "LinkedIn",
     "github": "GitHub"
   },
