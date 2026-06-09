@@ -12,7 +12,7 @@ import { ChatAssistant } from "@/components/chat/ChatAssistant"
 export default function Home() {
   return (
     <main className="bg-background text-foreground">
-      <div className="mx-auto flex min-h-screen max-w-5xl flex-col px-6 py-10 sm:px-8 lg:px-12">
+      <div className="mx-auto flex min-h-screen w-full max-w-screen-xl flex-col px-4 py-8 sm:px-6 md:px-10 lg:px-16 xl:px-20">
         <HeroSection />
         <AboutSection />
         <SkillsSection />
