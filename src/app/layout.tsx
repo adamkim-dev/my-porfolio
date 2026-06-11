@@ -2,6 +2,8 @@ import type { Metadata } from "next"
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google"
 import { headers } from "next/headers"
 import { Providers } from "@/components/providers"
+import { TopLoadingBar } from "@/components/ui/top-loading-bar"
+import { FloatingChatBubble } from "@/components/chat/FloatingChatBubble"
 import "./globals.css"
 
 const notoSans = Noto_Sans({
@@ -36,7 +38,9 @@ export default async function RootLayout({
       className={`${notoSans.variable} ${notoSansMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
+        <TopLoadingBar />
         <Providers>{children}</Providers>
+        <FloatingChatBubble />
       </body>
     </html>
   )

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import { fadeUp, stagger, viewportOnce } from "@/lib/animations"
+import { MotorBar } from "@/components/ui/motor-bar"
 import type { Dict } from "@/app/[lang]/dictionaries"
 import type { Experience } from "@/data/experiences"
 
@@ -19,6 +20,7 @@ export function ExperienceSection({ t, experiences }: Props) {
         whileInView="visible"
         viewport={viewportOnce}
       >
+        <MotorBar />
         <motion.div variants={fadeUp} className="mb-12">
           <p className="font-mono text-xs font-medium tracking-widest text-primary">
             // {t.title}
@@ -47,7 +49,7 @@ export function ExperienceSection({ t, experiences }: Props) {
                   className="relative"
                 >
                   {/* Timeline dot */}
-                  <div className="absolute -left-[1.625rem] top-1.5 h-3 w-3 rounded-full border-2 border-primary bg-background" />
+                  <div className="absolute -left-[1.875rem] top-1.5 h-3 w-3 rounded-full border-2 border-primary bg-background" />
 
                   <article className="rounded-2xl border border-border bg-card p-6 transition-shadow hover:shadow-md hover:shadow-primary/5">
                     <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">

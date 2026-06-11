@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Mail, ExternalLink } from "lucide-react"
 import { fadeUp, stagger, viewportOnce } from "@/lib/animations"
+import { MotorBar } from "@/components/ui/motor-bar"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import type { Dict } from "@/app/[lang]/dictionaries"
@@ -16,6 +17,7 @@ type Props = {
 export function ContactSection({ t, profile }: Props) {
   return (
     <section id="contact" className="mt-32">
+      <MotorBar />
       <motion.div
         variants={stagger}
         initial="hidden"
