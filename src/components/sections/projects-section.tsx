@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { AnimatePresence, motion } from "framer-motion"
 import { fadeUp, stagger, viewportOnce } from "@/lib/animations"
+import { MotorBar } from "@/components/ui/motor-bar"
 import { projects } from "@/data/projects"
 import { cn } from "@/lib/utils"
 import type { Dict } from "@/app/[lang]/dictionaries"
@@ -32,6 +33,7 @@ export function ProjectsSection({ t, lang }: Props) {
         whileInView="visible"
         viewport={viewportOnce}
       >
+        <MotorBar />
         {/* Two-column header: heading left, description right */}
         <motion.div variants={fadeUp} className="mb-12 grid gap-8 lg:grid-cols-2 lg:items-end">
           <div>

@@ -3,6 +3,7 @@
 import { Monitor, Cpu, ShieldCheck } from "lucide-react"
 import { motion } from "framer-motion"
 import { fadeUp, stagger, viewportOnce } from "@/lib/animations"
+import { MotorBar } from "@/components/ui/motor-bar"
 import type { Dict } from "@/app/[lang]/dictionaries"
 
 type Props = { t: Dict["expertise"] }
@@ -24,6 +25,7 @@ export function ExpertiseSection({ t }: Props) {
         whileInView="visible"
         viewport={viewportOnce}
       >
+        <MotorBar />
         {/* Centered heading */}
         <motion.div variants={fadeUp} className="mb-16 text-center">
           <p className="font-mono text-xs font-medium tracking-widest text-primary">

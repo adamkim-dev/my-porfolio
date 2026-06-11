@@ -7,7 +7,6 @@ import { ProjectsSection } from "@/components/sections/projects-section"
 import { ExperienceSection } from "@/components/sections/experience-section"
 import { ContactSection } from "@/components/sections/contact-section"
 import { FooterSection } from "@/components/sections/footer-section"
-import { ChatAssistant } from "@/components/chat/ChatAssistant"
 import { experiences } from "@/data/experiences"
 import { profile } from "@/data/profile"
 
@@ -39,7 +38,6 @@ export default async function Home({
           <ProjectsSection t={dict.projects} lang={lang} />
           <ExperienceSection t={dict.experience} experiences={experiences} />
           <ContactSection t={dict.contact} profile={profile} />
-          <ChatAssistant />
           <FooterSection t={dict.footer} />
         </div>
       </main>
