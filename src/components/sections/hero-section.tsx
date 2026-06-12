@@ -4,9 +4,12 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { fadeUp, stagger } from "@/lib/animations"
 import type { Dict } from "@/app/[lang]/dictionaries"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Download } from "lucide-react"
 import { CVDownloadPopup } from "@/components/ui/cv-download-popup"
+import dynamic from "next/dynamic"
+
+const Lottie = dynamic(() => import("lottie-react").then((m) => m.default), { ssr: false })
 
 type Props = {
   t: Dict["hero"]
@@ -16,6 +19,15 @@ type Props = {
 
 export function HeroSection({ t, profile: p }: Props) {
   const [cvOpen, setCvOpen] = useState(false)
+  const [robotData, setRobotData] = useState<object | null>(null)
+  const [orbiting, setOrbiting] = useState(false)
+
+  useEffect(() => {
+    fetch("/robot.json").then((r) => r.json()).then(setRobotData)
+    // Let the hero animate in, then start orbit
+    const t = setTimeout(() => setOrbiting(true), 2000)
+    return () => clearTimeout(t)
+  }, [])
   return (
     <section id="home" className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center pt-16 text-center">
       {/* Background glow blobs */}
@@ -30,13 +42,57 @@ export function HeroSection({ t, profile: p }: Props) {
         animate="visible"
         className="flex w-full flex-col items-center gap-6"
       >
-        {/* Giant name — scales to fill viewport */}
-        <motion.h1
-          variants={fadeUp}
-          className="w-full font-sans text-[clamp(3rem,12vw,10rem)] font-black uppercase leading-none tracking-tighter text-foreground"
-        >
-          {p.name}
-        </motion.h1>
+        {/* Giant name + robot orbit */}
+        <div className="relative w-full">
+          <motion.h1
+            variants={fadeUp}
+            className="w-full font-sans text-[clamp(3rem,12vw,10rem)] font-black uppercase leading-none tracking-tighter text-foreground"
+          >
+            {p.name}
+          </motion.h1>
+
+          {/* Robot — starts beside name, then orbits */}
+          {robotData && (
+            <motion.div
+              className="absolute inset-0 flex items-center justify-center pointer-events-none"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.0, duration: 0.5 }}
+            >
+              {/* X-axis drive (cosine) */}
+              <div
+                style={
+                  {
+                    "--rx": "46vw",
+                    "--ry": "110px",
+                    transform: orbiting ? undefined : "translateX(46vw)",
+                    animation: orbiting
+                      ? "robot-orbit-x 12s linear infinite"
+                      : "none",
+                  } as React.CSSProperties
+                }
+              >
+                {/* Y-axis drive (sine) */}
+                <div
+                  style={{
+                    animation: orbiting
+                      ? "robot-orbit-y 12s linear infinite"
+                      : "none",
+                  }}
+                >
+                  <div className="dark:invert">
+                    <Lottie
+                      animationData={robotData}
+                      loop
+                      autoplay
+                      style={{ width: 90, height: 90 }}
+                    />
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </div>
 
         {/* Monospace subtitle */}
         <motion.p
