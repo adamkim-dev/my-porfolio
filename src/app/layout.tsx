@@ -4,6 +4,7 @@ import { headers } from "next/headers"
 import { Providers } from "@/components/providers"
 import { TopLoadingBar } from "@/components/ui/top-loading-bar"
 import { FloatingChatBubble } from "@/components/chat/FloatingChatBubble"
+import { PageLoader } from "@/components/ui/page-loader"
 import "./globals.css"
 
 const notoSans = Noto_Sans({
@@ -38,6 +39,7 @@ export default async function RootLayout({
       className={`${notoSans.variable} ${notoSansMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
+        <PageLoader />
         <TopLoadingBar />
         <Providers>{children}</Providers>
         <FloatingChatBubble />

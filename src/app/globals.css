@@ -118,6 +118,30 @@
   --sidebar-ring: #00d4f5;
 }
 
+/* ── Robot orbit animation (dual-axis = true ellipse) ─────── */
+@keyframes robot-orbit-x {
+  0%     { transform: translateX(var(--rx)); }
+  12.5%  { transform: translateX(calc(var(--rx) * 0.707)); }
+  25%    { transform: translateX(0px); }
+  37.5%  { transform: translateX(calc(var(--rx) * -0.707)); }
+  50%    { transform: translateX(calc(var(--rx) * -1)); }
+  62.5%  { transform: translateX(calc(var(--rx) * -0.707)); }
+  75%    { transform: translateX(0px); }
+  87.5%  { transform: translateX(calc(var(--rx) * 0.707)); }
+  100%   { transform: translateX(var(--rx)); }
+}
+@keyframes robot-orbit-y {
+  0%     { transform: translateY(0px); }
+  12.5%  { transform: translateY(calc(var(--ry) * 0.707)); }
+  25%    { transform: translateY(var(--ry)); }
+  37.5%  { transform: translateY(calc(var(--ry) * 0.707)); }
+  50%    { transform: translateY(0px); }
+  62.5%  { transform: translateY(calc(var(--ry) * -0.707)); }
+  75%    { transform: translateY(calc(var(--ry) * -1)); }
+  87.5%  { transform: translateY(calc(var(--ry) * -0.707)); }
+  100%   { transform: translateY(0px); }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
