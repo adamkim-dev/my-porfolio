@@ -4,6 +4,9 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { fadeUp, stagger } from "@/lib/animations"
 import type { Dict } from "@/app/[lang]/dictionaries"
+import { useState } from "react"
+import { Download } from "lucide-react"
+import { CVDownloadPopup } from "@/components/ui/cv-download-popup"
 
 type Props = {
   t: Dict["hero"]
@@ -12,6 +15,7 @@ type Props = {
 }
 
 export function HeroSection({ t, profile: p }: Props) {
+  const [cvOpen, setCvOpen] = useState(false)
   return (
     <section id="home" className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center justify-center pt-16 text-center">
       {/* Background glow blobs */}
@@ -56,6 +60,18 @@ export function HeroSection({ t, profile: p }: Props) {
           >
             {t.cta_projects}
           </Link>
+          {/* CV download button */}
+          <div className="relative">
+            <CVDownloadPopup isOpen={cvOpen} onClose={() => setCvOpen(false)} variant="inline" />
+            <button
+              onClick={() => setCvOpen((v) => !v)}
+              className="inline-flex h-11 items-center gap-2 rounded-full border border-border px-6 font-mono text-xs font-semibold uppercase tracking-widest text-foreground transition-colors hover:border-primary hover:text-primary"
+              aria-label="Download CV"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Get My CV
+            </button>
+          </div>
         </motion.div>
 
         {/* Stats */}

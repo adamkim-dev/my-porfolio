@@ -3,7 +3,8 @@
 import { AnimatePresence, motion } from "framer-motion"
 import { useState, useRef, useEffect } from "react"
 import { QueryClient, QueryClientProvider, useMutation } from "@tanstack/react-query"
-import { Sparkles, X, Send } from "lucide-react"
+import { Sparkles, X, Send, Download } from "lucide-react"
+import { CVDownloadPopup } from "@/components/ui/cv-download-popup"
 
 const QUICK_PROMPTS = [
     "Who is Kim Van Ha?",
@@ -25,6 +26,7 @@ export function FloatingChatBubble() {
 
 function FloatingChatBubbleInner() {
     const [isOpen, setIsOpen] = useState(false)
+    const [cvOpen, setCvOpen] = useState(false)
     const [input, setInput] = useState("")
     const [messages, setMessages] = useState<Message[]>([
         { role: "assistant", text: "Ask me about Kim Van Ha's skills, experience, or featured projects." },
@@ -175,49 +177,66 @@ function FloatingChatBubbleInner() {
                 )}
             </AnimatePresence>
 
-            {/* Floating trigger button */}
-            <motion.button
-                onClick={() => setIsOpen((v) => !v)}
-                whileHover={{ scale: 1.08 }}
-                whileTap={{ scale: 0.92 }}
-                className="relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30 transition-shadow hover:shadow-xl hover:shadow-primary/40"
-                aria-label="Open AI assistant"
-            >
-                {/* Animated pulse rings when closed */}
-                {!isOpen && (
-                    <>
-                        <span
-                            className="absolute inset-0 rounded-full bg-primary opacity-20 animate-ping"
-                            style={{ animationDuration: "2s" }}
-                        />
-                        <span className="absolute -inset-1 rounded-full border border-primary/25 animate-pulse" />
-                    </>
-                )}
+            {/* Bottom row: CV button + Chat button */}
+            <div className="flex items-end gap-3">
+                {/* CV download button */}
+                <div className="relative">
+                    <CVDownloadPopup isOpen={cvOpen} onClose={() => setCvOpen(false)} variant="corner" />
+                    <motion.button
+                        onClick={() => { setCvOpen((v) => !v); setIsOpen(false) }}
+                        whileHover={{ scale: 1.08 }}
+                        whileTap={{ scale: 0.92 }}
+                        className="relative flex h-12 w-12 items-center justify-center rounded-full border border-border bg-card/95 text-foreground shadow-lg backdrop-blur-md transition hover:border-primary hover:text-primary"
+                        aria-label="Download CV"
+                        title="Download CV"
+                    >
+                        <Download className="h-5 w-5" />
+                    </motion.button>
+                </div>
 
-                <AnimatePresence mode="wait">
-                    {isOpen ? (
-                        <motion.span
-                            key="x"
-                            initial={{ opacity: 0, rotate: -90, scale: 0.7 }}
-                            animate={{ opacity: 1, rotate: 0, scale: 1 }}
-                            exit={{ opacity: 0, rotate: 90, scale: 0.7 }}
-                            transition={{ duration: 0.18 }}
-                        >
-                            <X className="h-6 w-6" />
-                        </motion.span>
-                    ) : (
-                        <motion.span
-                            key="sparkles"
-                            initial={{ opacity: 0, rotate: 90, scale: 0.7 }}
-                            animate={{ opacity: 1, rotate: 0, scale: 1 }}
-                            exit={{ opacity: 0, rotate: -90, scale: 0.7 }}
-                            transition={{ duration: 0.18 }}
-                        >
-                            <Sparkles className="h-6 w-6" />
-                        </motion.span>
+                {/* Floating chat trigger button */}
+                <motion.button
+                    onClick={() => { setIsOpen((v) => !v); setCvOpen(false) }}
+                    whileHover={{ scale: 1.08 }}
+                    whileTap={{ scale: 0.92 }}
+                    className="relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-lg shadow-primary/30 transition-shadow hover:shadow-xl hover:shadow-primary/40"
+                    aria-label="Open AI assistant"
+                >
+                    {!isOpen && (
+                        <>
+                            <span
+                                className="absolute inset-0 rounded-full bg-primary opacity-20 animate-ping"
+                                style={{ animationDuration: "2s" }}
+                            />
+                            <span className="absolute -inset-1 rounded-full border border-primary/25 animate-pulse" />
+                        </>
                     )}
-                </AnimatePresence>
-            </motion.button>
+
+                    <AnimatePresence mode="wait">
+                        {isOpen ? (
+                            <motion.span
+                                key="x"
+                                initial={{ opacity: 0, rotate: -90, scale: 0.7 }}
+                                animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                                exit={{ opacity: 0, rotate: 90, scale: 0.7 }}
+                                transition={{ duration: 0.18 }}
+                            >
+                                <X className="h-6 w-6" />
+                            </motion.span>
+                        ) : (
+                            <motion.span
+                                key="sparkles"
+                                initial={{ opacity: 0, rotate: 90, scale: 0.7 }}
+                                animate={{ opacity: 1, rotate: 0, scale: 1 }}
+                                exit={{ opacity: 0, rotate: -90, scale: 0.7 }}
+                                transition={{ duration: 0.18 }}
+                            >
+                                <Sparkles className="h-6 w-6" />
+                            </motion.span>
+                        )}
+                    </AnimatePresence>
+                </motion.button>
+            </div>
         </div>
     )
 }
