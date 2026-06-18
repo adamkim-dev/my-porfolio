@@ -158,7 +158,7 @@
         "summary": "Nền tảng giao tiếp realtime tích hợp chat, gọi video và giao diện 3D immersive cho các cuộc họp ảo cộng tác.",
         "highlights": [
           "Triển khai luồng chat và video UI với hiệu suất và khả năng tiếp cận.",
-          "Tích hợp nội dung 3D Unity vào trải nghiệm web React.",
+          "Tích hợp môi trường 3D Unity vào trải nghiệm web React.",
           "Hợp tác đồng bộ realtime với dịch vụ messaging backend."
         ],
         "details": [
@@ -166,14 +166,14 @@
           "Đảm bảo khả năng tiếp cận và streaming độ trễ thấp cho người tham gia từ xa trên nhiều thiết bị.",
           "Phối hợp tích hợp liên nhóm cho messaging, signaling và module trải nghiệm 3D."
         ],
-        "status": "Đang phát triển",
+        "status": "Đã hoàn thành",
         "link_label": "Tổng quan dự án"
       },
       {
         "title": "Cổng Đăng Ký OMJS NCS",
         "summary": "Sản phẩm đăng ký hôn nhân và quản lý sự kiện đa tôn giáo giúp đơn giản hóa đặt chỗ và onboarding người dùng.",
         "highlights": [
-          "Xây dựng hành trình người dùng responsive sử dụng Ant Design và React.",
+          "Xây dựng hành trình người dùng responsive sử dụng Material UI và React.",
           "Triển khai tương thích đa nền tảng và cải thiện giao diện tiếp cận.",
           "Hỗ trợ tích hợp backend cho theo dõi trạng thái và quy trình sự kiện."
         ],
@@ -186,20 +186,100 @@
         "link_label": "Nghiên cứu điển hình"
       },
       {
-        "title": "Hệ Thống Thiết Kế & Framework Kiểm Thử",
-        "summary": "Nền tảng UI và kiểm thử tái sử dụng được xây dựng cho các nhóm doanh nghiệp, kết hợp nguyên tắc thiết kế atomic với xác thực component tự động.",
+        "title": "EVHub — Volkswagen",
+        "summary": "Nền tảng khám phá xe cho khách hàng Volkswagen với tính năng tìm xe cá nhân hóa, thông số chi tiết và bản đồ trạm sạc EV.",
         "highlights": [
-          "Thiết lập thư viện component chung với Storybook và design tokens.",
-          "Cải thiện sự hợp tác giữa nhà thiết kế và lập trình viên qua các mẫu giao diện rõ ràng.",
-          "Tăng tốc triển khai với các khối UI tái sử dụng và coverage kiểm thử rõ ràng."
+          "Xây dựng bài kiểm tra tìm xe tương tác để hướng dẫn người dùng đến mẫu Volkswagen phù hợp.",
+          "Tích hợp bản đồ trạm sạc để hiển thị cơ sở hạ tầng EV gần đó cho người mua tiềm năng.",
+          "Triển khai unit test với Jest để xác thực các tương tác UI và luồng dữ liệu quan trọng."
         ],
         "details": [
-          "Tạo thư viện component chung với Storybook docs, design tokens và các mẫu tái sử dụng.",
-          "Xây dựng nền tảng kiểm thử kết nối component UI với Jest, Playwright và accessibility checks.",
-          "Giúp nhóm thiết kế và kỹ thuật triển khai giao diện nhất quán nhanh hơn với tài liệu rõ ràng."
+          "Phát triển trải nghiệm khám phá sản phẩm hướng đến khách hàng bằng React và Material UI theo design system của Volkswagen.",
+          "Triển khai giao diện tương thích đa trình duyệt với thời gian tải nhanh và tương tác mượt mà trên mọi thiết bị.",
+          "Đảm bảo độ tin cậy của code thông qua unit testing và hợp tác với backend để tích hợp API liền mạch."
         ],
-        "status": "Đang tiến hành",
-        "link_label": "Đọc triết lý thiết kế"
+        "status": "Đã hoàn thành",
+        "link_label": "Tổng quan sản phẩm"
+      },
+      {
+        "title": "Corsair E-Commerce",
+        "summary": "Cửa hàng thương mại điện tử toàn cầu cho thiết bị ngoại vi gaming, xây dựng trên Shopify với tìm kiếm sản phẩm nâng cao bằng Algolia.",
+        "highlights": [
+          "Phát triển storefront Next.js với data fetching bằng GraphQL từ Shopify.",
+          "Triển khai tìm kiếm và lọc sản phẩm nhanh chóng theo nhiều tiêu chí bằng Algolia.",
+          "Cross-review code với các thành viên trong tổ chức kỹ thuật 200 người."
+        ],
+        "details": [
+          "Xây dựng và duy trì nền tảng thương mại điện tử quy mô lớn cho toàn bộ dòng sản phẩm gaming của Corsair.",
+          "Sử dụng Apollo Client và GraphQL để quản lý dữ liệu sản phẩm, trạng thái giỏ hàng và luồng thanh toán hiệu quả.",
+          "Giải quyết các vấn đề UI và báo cáo tiến độ công việc cho quản lý khách hàng trong suốt dự án."
+        ],
+        "status": "Đã hoàn thành",
+        "link_label": "Tổng quan dự án"
+      },
+      {
+        "title": "Ứng Dụng Taffi Styling",
+        "summary": "Ứng dụng tùy chỉnh phong cách cho phép người dùng duyệt và cá nhân hóa các phong cách trên desktop và mobile để nâng cao trải nghiệm mua sắm.",
+        "highlights": [
+          "Phát triển luồng styling đa thiết bị bằng React và Next.js cho cả mobile và desktop.",
+          "Tích hợp dữ liệu GraphQL cho tương tác catalog và cấu hình stylist realtime.",
+          "Hợp tác sửa lỗi và nâng cao chất lượng UI với nhóm liên chức năng."
+        ],
+        "details": [
+          "Xây dựng trải nghiệm tùy chỉnh thời trang bằng Next.js và Material UI, được tối ưu cho Safari và trình duyệt mobile.",
+          "Tích hợp GraphQL để xử lý nội dung catalog động và dữ liệu cấu hình stylist.",
+          "Hỗ trợ bảo trì và cải tiến UI liên tục trong suốt vòng đời sản phẩm."
+        ],
+        "status": "Đã hoàn thành",
+        "link_label": "Tổng quan dự án"
+      },
+      {
+        "title": "NGV Creative Index",
+        "summary": "Website trực quan hóa dữ liệu giới thiệu thống kê các công ty thương hiệu địa phương, được xây dựng bằng Next.js và thư viện animation.",
+        "highlights": [
+          "Xây dựng trải nghiệm web dựa trên thống kê bằng Next.js và TailwindCSS với animation mượt mà.",
+          "Triển khai giao diện tương thích đa trình duyệt cho IE và Chrome.",
+          "Hợp tác với nhóm 10 người để đáp ứng các mốc bàn giao cho khách hàng."
+        ],
+        "details": [
+          "Phát triển trang trình bày dữ liệu tương tác cho National Gallery of Victoria bằng Next.js và TailwindCSS.",
+          "Tích hợp thư viện animation để làm sống động nội dung thống kê với motion design được đánh bóng.",
+          "Hỗ trợ triển khai trên AWS và tham gia code review cùng nhóm dự án."
+        ],
+        "status": "Đã hoàn thành",
+        "link_label": "Tổng quan dự án"
+      },
+      {
+        "title": "Ứng Dụng Web OrderBuddy",
+        "summary": "Ứng dụng web quản lý nhà hàng giúp xử lý đơn hàng khách hàng hiệu quả và tích hợp xử lý thanh toán.",
+        "highlights": [
+          "Xây dựng trải nghiệm quản lý đơn hàng frontend bằng React và TailwindCSS.",
+          "Tích hợp Stripe API để xử lý thanh toán an toàn cho giao dịch nhà hàng.",
+          "Đảm bảo tương thích đa trình duyệt trên IE và Chrome."
+        ],
+        "details": [
+          "Phát triển nền tảng đặt hàng và thanh toán nhà hàng responsive cho nhóm 60 người.",
+          "Triển khai quy trình quản lý đơn hàng realtime bằng React, tối ưu cho tốc độ và khả năng sử dụng.",
+          "Hợp tác sửa lỗi, cải thiện UI và báo cáo tiến độ công việc cho quản lý khách hàng."
+        ],
+        "status": "Đã hoàn thành",
+        "link_label": "Tổng quan dự án"
+      },
+      {
+        "title": "Cổng Nội Bộ Graphene",
+        "summary": "Nền tảng kiến thức nội bộ để lưu trữ và tương tác với nội dung học thuật — bài giảng, video, tác giả và tạp chí — với khả năng xuất Excel.",
+        "highlights": [
+          "Xây dựng giao diện bảng dữ liệu phong phú để duyệt và xuất nội dung học thuật sang Excel.",
+          "Hợp tác với product owner để làm rõ yêu cầu và xác định trải nghiệm người dùng.",
+          "Triển khai các chức năng mới với TypeScript và tích hợp REST API."
+        ],
+        "details": [
+          "Phát triển nền tảng web nội bộ được sử dụng bởi tổ chức 50 người để quản lý và khám phá tài nguyên học thuật.",
+          "Xây dựng bảng dữ liệu tương tác với chế độ xem chi tiết và xuất Excel cho quy trình vận hành.",
+          "Làm việc trực tiếp với stakeholder để xác định nhu cầu người dùng và chuyển thành tính năng sản phẩm."
+        ],
+        "status": "Đã hoàn thành",
+        "link_label": "Tổng quan dự án"
       }
     ]
   },

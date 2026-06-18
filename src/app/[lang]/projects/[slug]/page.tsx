@@ -50,7 +50,7 @@ export default async function ProjectDetailPage({
       <div className="mb-12 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <p className="font-mono text-xs font-medium uppercase tracking-widest text-primary">
-            // {t.label}
+            {`// ${t.label}`}
           </p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             {projectDict.title}

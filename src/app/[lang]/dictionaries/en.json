@@ -187,7 +187,7 @@
           "Built serverless backend support using AWS Lambda and CloudFront to minimize latency."
         ],
         "details": [
-          "Led the frontend architecture for an airport operations suite that spans traveler-facing web apps and internal dashboards.",
+          "Led the frontend architecture for an airport operations suite spanning traveler-facing web apps and internal dashboards.",
           "Delivered responsive experiences with role-based navigation, real-time updates, and mobile-friendly boarding workflows.",
           "Optimized performance with serverless APIs and CDN delivery for fast loading across airport terminals."
         ],
@@ -199,7 +199,7 @@
         "summary": "A real-time communication platform integrating chat, video calls, and immersive 3D interfaces for collaborative virtual meetings.",
         "highlights": [
           "Implemented chat and video UI flows with performance and accessibility in mind.",
-          "Integrated 3D Unity content into a React web experience.",
+          "Integrated 3D Unity environments into a React web experience.",
           "Collaborated on real-time synchronization with backend messaging services."
         ],
         "details": [
@@ -207,14 +207,14 @@
           "Ensured accessibility and low-latency streaming for remote participants across devices.",
           "Coordinated cross-team integration of messaging, signaling, and 3D experience modules."
         ],
-        "status": "In development",
+        "status": "Delivered",
         "link_label": "Project overview"
       },
       {
         "title": "OMJS NCS Registration Portal",
         "summary": "A multi-faith marriage registration and event management product designed to simplify booking and user onboarding.",
         "highlights": [
-          "Built a responsive user journey using Ant Design and React.",
+          "Built a responsive user journey using Material UI and React.",
           "Delivered cross-platform compatibility and accessible interface improvements.",
           "Supported backend integration for status tracking and event workflows."
         ],
@@ -227,20 +227,100 @@
         "link_label": "Case study"
       },
       {
-        "title": "Design System & Test Framework",
-        "summary": "A reusable UI and testing foundation built for enterprise teams, combining atomic design principles with automated component validation.",
+        "title": "EVHub — Volkswagen",
+        "summary": "A car discovery platform for Volkswagen customers featuring personalized model matching, detailed specs, and an EV charging station map.",
         "highlights": [
-          "Established a shared component library powered by Storybook and design tokens.",
-          "Improved collaboration between designers and developers through clear interface patterns.",
-          "Enabled faster delivery with reusable UI building blocks and clear test coverage."
+          "Built an interactive car-finder quiz to guide users toward their ideal Volkswagen model.",
+          "Integrated a charging station map to surface nearby EV infrastructure for prospective buyers.",
+          "Implemented unit tests with Jest to validate key UI interactions and data flows."
         ],
         "details": [
-          "Created a shared component library with Storybook docs, design tokens, and reusable patterns.",
-          "Built a testing foundation that connects UI components with Jest, Playwright, and accessibility checks.",
-          "Enabled design and engineering teams to ship consistent interfaces faster with strong documentation."
+          "Developed a customer-facing product discovery experience using React and Material UI based on the Volkswagen design system.",
+          "Delivered cross-browser compatible interfaces with fast load times and smooth interactivity across all devices.",
+          "Ensured code reliability through unit testing and collaborated with backend teams for seamless API integration."
         ],
-        "status": "Ongoing",
-        "link_label": "Read the design philosophy"
+        "status": "Delivered",
+        "link_label": "Product overview"
+      },
+      {
+        "title": "Corsair E-Commerce",
+        "summary": "A global e-commerce storefront for gaming peripherals, built on Shopify with advanced product search and filtering powered by Algolia.",
+        "highlights": [
+          "Developed the Next.js storefront with GraphQL-driven data fetching from Shopify.",
+          "Implemented fast, faceted product search and filtering using Algolia.",
+          "Cross-reviewed code with team members across a 200-person engineering organization."
+        ],
+        "details": [
+          "Built and maintained a large-scale e-commerce platform for Corsair's full range of gaming peripherals and accessories.",
+          "Leveraged Apollo Client and GraphQL to manage product data, cart state, and checkout flows efficiently.",
+          "Resolved UI issues and reported task progress to customer managers throughout the engagement."
+        ],
+        "status": "Delivered",
+        "link_label": "Project overview"
+      },
+      {
+        "title": "Taffi Styling App",
+        "summary": "A stylist customization app enabling users to browse and personalize styles across desktop and mobile for enhanced shopping experiences.",
+        "highlights": [
+          "Developed cross-device styling flows with React and Next.js targeting both mobile and desktop audiences.",
+          "Implemented GraphQL data integration for real-time style and catalog interactions.",
+          "Collaborated on bug resolution and UI quality with a cross-functional team."
+        ],
+        "details": [
+          "Built a fashion customization experience using Next.js and Material UI, optimized for Safari and mobile browsers.",
+          "Integrated GraphQL to handle dynamic catalog content and stylist configuration data.",
+          "Supported ongoing maintenance and UI improvements throughout the product lifecycle."
+        ],
+        "status": "Delivered",
+        "link_label": "Project overview"
+      },
+      {
+        "title": "NGV Creative Index",
+        "summary": "A data visualization website showcasing statistics for local brand companies, built with Next.js and animation libraries for an engaging narrative experience.",
+        "highlights": [
+          "Built a statistics-driven web experience using Next.js and TailwindCSS with smooth animations.",
+          "Delivered cross-browser compatible layouts for IE and Chrome.",
+          "Collaborated with a team of 10 to meet client delivery milestones."
+        ],
+        "details": [
+          "Developed an interactive data presentation site for National Gallery of Victoria using Next.js and TailwindCSS.",
+          "Integrated animation libraries to bring statistical content to life with polished motion design.",
+          "Supported deployment on AWS and participated in code reviews with the project team."
+        ],
+        "status": "Delivered",
+        "link_label": "Project overview"
+      },
+      {
+        "title": "OrderBuddy Web App",
+        "summary": "A restaurant management web application enabling efficient customer order handling and integrated payment processing.",
+        "highlights": [
+          "Built the frontend order management experience using React and TailwindCSS.",
+          "Integrated Stripe API to handle secure payment processing for restaurant transactions.",
+          "Ensured cross-browser compatibility across IE and Chrome for broad user reach."
+        ],
+        "details": [
+          "Developed a responsive restaurant ordering and payment platform for a team of 60.",
+          "Implemented real-time order management workflows with React, optimizing for speed and usability.",
+          "Collaborated on bug fixes, UI improvements, and reported task progress to client managers."
+        ],
+        "status": "Delivered",
+        "link_label": "Project overview"
+      },
+      {
+        "title": "Graphene Internal Portal",
+        "summary": "An internal knowledge platform for storing and interacting with academic content — lectures, videos, authors, and journals — with Excel export capabilities.",
+        "highlights": [
+          "Built data-rich table interfaces for browsing and exporting academic content to Excel.",
+          "Collaborated with the product owner to clarify requirements and define user experiences.",
+          "Delivered new functionalities with TypeScript and REST API integrations."
+        ],
+        "details": [
+          "Developed an internal web platform used by a 50-person organization to manage and explore academic resources.",
+          "Built interactive data tables with deep-link detail views and Excel export for operational workflows.",
+          "Worked directly with stakeholders to identify user needs and translate them into product features."
+        ],
+        "status": "Delivered",
+        "link_label": "Project overview"
       }
     ]
   },
